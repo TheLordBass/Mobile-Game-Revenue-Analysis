@@ -108,7 +108,7 @@ The source data carried the problems typical of client-side telemetry and billin
 
 **Refunds were standardised to positive and separated in the measure layer.** The source represented refunds two ways — negative `amount_gbp` on some rows, positive with a `refunded` status on others — which makes the column unsummable. Standardising the sign fixes that, but creates a second problem: refunds and failed payments become indistinguishable from completed sales in a naive sum. Every revenue measure therefore filters on `status = "completed"`, with refunds reported separately as their own value and rate.
 
-**Duplicate transactions inflated revenue by 1.3%.** Before deduplication, gross revenue read £111,190 against a true £109,834, with the same proportional error propagating into ARPU, ARPPU and refund rate. The distortion is small enough to pass unnoticed, which is precisely why the uniqueness check matters.
+**Duplicate transactions inflated revenue by 1.2%.** Before deduplication, gross revenue read £111,190 against a true £109,834, with the same proportional error propagating into ARPU, ARPPU and refund rate. The distortion is small enough to pass unnoticed, which is precisely why the uniqueness check matters.
 
 **`Culture="en-GB"` on date parsing.** 27,646 timestamps arrived as `dd/mm/yyyy`. Of these, 16,955 have a day number above 12 and would throw a visible error under US parsing — but the remaining 10,691 would parse silently wrong, swapping day and month. Errors are recoverable; silent transposition is not.
 
@@ -192,7 +192,7 @@ The secondary axis is set to 0–100% rather than auto-scaling. On an auto axis 
 | File | Description |
 |---|---|
 | `Game Dashboard.pbix` | Power BI report, including all Power Query steps and DAX measures |
-| `Mobile-Game-Revenue-Analysis.png` | Screenshot of the report page |
+| `Mobile-Game-Revenue-Analysis1.png` | Screenshot of the report page |
 
 ---
 
