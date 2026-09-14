@@ -12,7 +12,7 @@ Power BI analysis of 18 months of in-app purchase data for **Tactic Royale**, a 
 
 ## The dashboard
 
-![Mobile game revenue dashboard](Mobile-Game-Revenue-Analysis.png)
+![Mobile game revenue dashboard](Mobile-Game-Revenue-Analysis1.png)
 
 One page: seven KPI cards across the top, revenue split by item category, revenue and paying players on a shared monthly axis, a Pareto curve of revenue concentration by player decile, revenue by individual item, and the top ten countries.
 
