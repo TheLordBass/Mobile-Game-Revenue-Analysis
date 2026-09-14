@@ -1,6 +1,6 @@
 # Mobile Game Revenue Analysis
 
-Power BI analysis of 18 months of in-app purchase data for **Tactic Royale**, a fictional free-to-play mobile football management game.
+Power BI analysis of 18 months of in-app purchase data for **Tactic Royale**, a fictional free-to-play mobile football management game. 
 
 **Period:** January 2025 – June 2026  
 **Scope:** 14,151 players, 16,296 transactions, £109,834 gross revenue  
