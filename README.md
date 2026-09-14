@@ -2,11 +2,21 @@
 
 Power BI analysis of 18 months of in-app purchase data for **Tactic Royale**, a fictional free-to-play mobile football management game.
 
-**Period:** January 2025 – June 2026
-**Scope:** 14,151 players, 16,296 transactions, £109,834 gross revenue
+**Period:** January 2025 – June 2026  
+**Scope:** 14,151 players, 16,296 transactions, £109,834 gross revenue  
 **Tools:** Power BI (Power Query / M, DAX)
 
 > The dataset is synthetic and generated for this project. It does not represent any real product.
+
+---
+
+## The dashboard
+
+![Mobile game revenue dashboard](Mobile-Game-Revenue-Analysis.png)
+
+One page: seven KPI cards across the top, revenue split by item category, revenue and paying players on a shared monthly axis, a Pareto curve of revenue concentration by player decile, revenue by individual item, and the top ten countries.
+
+The two charts that carry the argument are the monthly dual-axis view — where revenue and paying players rise together, showing growth comes from volume rather than depth — and the Pareto curve, whose near-vertical first decile makes the concentration visible at a glance.
 
 ---
 
@@ -169,10 +179,10 @@ The secondary axis is set to 0–100% rather than auto-scaling. On an auto axis 
 
 ## Definitions
 
-**ARPU** — average revenue per user, across all players including non-payers.
-**ARPPU** — average revenue per paying user. The gap between this and ARPU is the monetisation story.
-**Conversion rate** — share of players who complete at least one purchase.
-**Refund rate** — refunded transactions as a share of transactions that completed or were refunded.
+**ARPU** — average revenue per user, across all players including non-payers.  
+**ARPPU** — average revenue per paying user. The gap between this and ARPU is the monetisation story.  
+**Conversion rate** — share of players who complete at least one purchase.  
+**Refund rate** — refunded transactions as a share of transactions that completed or were refunded.  
 **Revenue decile** — paying players ranked by lifetime spend and split into ten equal groups.
 
 ---
@@ -181,7 +191,8 @@ The secondary axis is set to 0–100% rather than auto-scaling. On an auto axis 
 
 | File | Description |
 |---|---|
-| `tactic-royale-revenue.pbix` | Power BI report, including all Power Query steps and DAX measures |
+| `Game Dashboard.pbix` | Power BI report, including all Power Query steps and DAX measures |
+| `Mobile-Game-Revenue-Analysis.png` | Screenshot of the report page |
 
 ---
 
